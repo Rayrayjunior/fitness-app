@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react"
 
-import TakeInput from "./components/takeinput"
+import TakeInput from "../components/takeinput"
 
 const Addfood = () => {
 
