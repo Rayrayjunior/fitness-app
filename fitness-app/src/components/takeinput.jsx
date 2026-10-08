@@ -5,17 +5,17 @@ const takeKcal = ( { addkcal } ) => {
     const [name, setName] = useState("");
     const [energy, setEnergy] = useState("");
 
-    const addtoFitness = () => {
+    const addtoFood = () => {
 
         if(name.trim() === "") return;
 
-        const kcalinfo = {
+        const foodinfo = {
             name: name,
             energy: energy,
             day: Date.now()
         };
 
-        addkcal(addtoFitness);
+        addkcal(foodinfo);
         setName("");
         setEnergy("");
     }
