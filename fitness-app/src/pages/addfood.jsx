@@ -1,10 +1,12 @@
+import { useState, useMemo } from "react"
 
+import AddFood from "./components/takeinput"
 
 const Addfood = () => {
 
     return(
         <div>
-            addfood
+            
         </div>
     )
 }
