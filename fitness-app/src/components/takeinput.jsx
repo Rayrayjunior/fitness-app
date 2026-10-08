@@ -25,6 +25,11 @@ const takeKcal = ( { addkcal } ) => {
         setName(event.target.value);
     }
 
+    const takeEnergy = (event) => {
+
+        setEnergy(event.target.value);
+    }
+
     return(
         <div>
             <input onChange={takeName} type="text" value={name} placeholder="" />
