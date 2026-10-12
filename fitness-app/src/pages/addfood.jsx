@@ -12,7 +12,7 @@ const Addfood = () => {
 
     return(
         <div>
-            <TakeInput addInput={addFood} />            
+            <TakeInput TakeInput={addFood} />            
         </div>
     )
 }
