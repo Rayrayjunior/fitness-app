@@ -33,6 +33,7 @@ const takeKcal = ( { addkcal } ) => {
     return(
         <div>
             <input onChange={takeName} type="text" value={name} placeholder="banana" />
+            <input onChange={takeEnergy} type="number" value={energy} placeholder="22" />
         
             <button onClick={addtoFood}>Add Food</button>
         </div>
