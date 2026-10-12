@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react"
 
 import TakeInput from "../components/takeinput"
+import FitnessDisplay from "../components/displayinfo";
 
 const Addfood = () => {
 
@@ -12,7 +13,8 @@ const Addfood = () => {
 
     return(
         <div>
-            <TakeInput TakeInput={addFood} />            
+            <TakeInput addkcal={addFood} />
+            <FitnessDisplay food={food} />
         </div>
     )
 }
