@@ -12,7 +12,7 @@ const takeKcal = ( { addkcal } ) => {
         const foodinfo = {
             name: name,
             energy: energy,
-            day: Date.now()
+            id: Date.now()
         };
 
         addkcal(foodinfo);

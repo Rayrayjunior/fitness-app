@@ -5,7 +5,7 @@ const FitnessDisplay = ( { food } ) => {
     return(
         <div>
             {food.map((item) => (
-                <p key={item.id}>Name: {item.name} | </p>
+                <p key={item.id}>Name: {item.name} | Kilojules : {item.energy} | Date : {item.id}</p>
             ))}
         </div>
     )
