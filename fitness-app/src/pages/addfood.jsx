@@ -11,6 +11,14 @@ const Addfood = () => {
         setFood(prev => [...prev, foodinfo]);
     };
 
+    const totalKcal = useMemo(() => {
+
+        const kcalPer100g = item.energy / 4.184;
+        const total = (item.grams / 100) * kcalPer100g;
+
+        return total;
+        }, [food]);
+
     return(
         <div>
             <TakeInput addkcal={addFood} />
