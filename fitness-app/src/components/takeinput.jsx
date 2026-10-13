@@ -32,9 +32,9 @@ const takeKcal = ( { addkcal } ) => {
         setEnergy(event.target.value);
     }
 
-    const takeKcal = (event) => {
+    const takeGrams = (event) => {
 
-        setKcal(event.target.value);
+        setGrams(event.target.value);
     }
 
     return(
