@@ -14,9 +14,9 @@ const Addfood = () => {
     const totalKcal = useMemo(() => {
         return food.reduce((total, item) => {
             const toKcal = item.energy / 4.184;
-            const grams = item.grams
+            const grams = item.grams;
             const totalKcal = toKcal * (grams / 100);
-            return total + kcal;
+            return total + totalKcal;
 
         }, 0);
     }, [food]);
