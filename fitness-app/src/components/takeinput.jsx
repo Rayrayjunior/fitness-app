@@ -4,6 +4,7 @@ const takeKcal = ( { addkcal } ) => {
 
     const [name, setName] = useState("");
     const [energy, setEnergy] = useState("");
+    const [kcal, setKcal] = useState(""); 
 
     const addtoFood = () => {
 
