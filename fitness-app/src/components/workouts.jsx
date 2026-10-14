@@ -23,6 +23,11 @@ const takeWorkout = ( { addWorkout } ) => {
         setReps("");
         setWeights("");
     }
+
+    const takeName = (event) => {
+        
+        setName(event.target.value);
+    };
 }
 
 export default takeWorkout;
