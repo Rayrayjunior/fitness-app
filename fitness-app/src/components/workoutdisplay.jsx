@@ -10,3 +10,5 @@ const Workoutdisplay = ( { workout } ) => {
         </div>
     )
 }
+
+export default Workoutdisplay;

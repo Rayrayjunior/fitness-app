@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react"
 
 import Workout from "../components/takeinput"
+import Workoutdisplay from "../components/workoutdisplay"
 
 
 const WorkoutTracker = () => {
