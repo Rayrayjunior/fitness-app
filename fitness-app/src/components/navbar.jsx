@@ -7,6 +7,8 @@ const Navbar = () => {
             <h2>Fitness Tracker</h2>
             
             <NavLink to="/">Home</NavLink>
+            <NavLink to="/workout-tracker">Workout Tracker</NavLink>
+
         </nav>
     )
 }
