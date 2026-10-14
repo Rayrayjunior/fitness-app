@@ -9,7 +9,7 @@ const takeWorkout = ( { addWorkout } ) => {
 
     const addtoWorkout = () => {
 
-        if(!name.trim() === "") return;
+        if(name.trim() === "") return;
 
         const workoutinfo = {
             name: name,
@@ -52,6 +52,8 @@ const takeWorkout = ( { addWorkout } ) => {
             <input type="text" placeholder="5" value={sets} onChange={takeSets}/>
             <input type="text" placeholder="15" value={reps} onChange={takeReps}/>
             <input type="text" placeholder="15kg" value={weights} onChange={takeWeights}/>
+
+            <button onClick={addtoWorkout}></button>
         </div>
     )
 
