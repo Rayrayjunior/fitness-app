@@ -28,6 +28,24 @@ const takeWorkout = ( { addWorkout } ) => {
         
         setName(event.target.value);
     };
+
+    const takeSets = (event) => {
+        
+        setSets(event.target.value);
+    };
+
+    const takeReps = (event) => {
+        
+        setReps(event.target.value);
+    };
+
+    const takeWeights = (event) => {
+        
+        setWeights(event.target.value);
+    };
+
+
+
 }
 
 export default takeWorkout;
