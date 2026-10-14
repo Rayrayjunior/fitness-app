@@ -3,7 +3,8 @@ import ReactDom from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 import App from "./App.jsx";
-import Addfood from "./pages/addfood";
+import Addfood from "./pages/addfood.jsx";
+import Workouttracker from "./pages/workouttracker.jsx"
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Addfood />
+            },
+            {
+                path: "workout tracker",
+                element: <Workouttracker />
             }
             
         ]
