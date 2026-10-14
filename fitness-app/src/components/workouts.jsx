@@ -53,7 +53,7 @@ const takeWorkout = ( { addWorkout } ) => {
             <input type="text" placeholder="15" value={reps} onChange={takeReps}/>
             <input type="text" placeholder="15kg" value={weights} onChange={takeWeights}/>
 
-            <button onClick={addtoWorkout}></button>
+            <button onClick={addtoWorkout}>Add Workout</button>
         </div>
     )
 
