@@ -14,7 +14,7 @@ const WorkoutTracker = () => {
     const totalWorkout = useMemo(() => {
         return workout.reduce((total, item) => {
             const totalReps = item.sets * item.reps
-            return totalReps
+            return total + totalReps
         }, 0);
     }, [workout])
 
