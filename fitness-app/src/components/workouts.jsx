@@ -44,6 +44,17 @@ const takeWorkout = ( { addWorkout } ) => {
         setWeights(event.target.value);
     };
 
+    return(
+        <div>
+            <h1>Workout Tracker</h1>
+
+            <input type="text" placeholder="Bench Press" value={name} onChange={takeName}/>
+            <input type="text" placeholder="5" value={sets} onChange={takeSets}/>
+            <input type="text" placeholder="15" value={reps} onChange={takeReps}/>
+            <input type="text" placeholder="15kg" value={weights} onChange={takeWeights}/>
+        </div>
+    )
+
 
 
 }
