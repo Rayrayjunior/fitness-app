@@ -39,6 +39,8 @@ const takeKcal = ( { addkcal } ) => {
 
     return(
         <div>
+            <h1>Kcal Calculator</h1>
+            
             <input onChange={takeName} type="text" value={name} placeholder="banana" />
             <input onChange={takeEnergy} type="number" value={energy} placeholder="1200kj" />
             <input onChange={takeGrams} type="number" value={grams} placeholder="30g" />
