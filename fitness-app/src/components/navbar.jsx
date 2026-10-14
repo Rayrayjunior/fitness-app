@@ -4,7 +4,7 @@ const Navbar = () => {
 
     return(
         <nav>
-            <h2>Kcal Calculator</h2>
+            <h2>Fitness Tracker</h2>
             
             <NavLink to="/">Home</NavLink>
         </nav>

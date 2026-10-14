@@ -17,7 +17,7 @@ const router = createBrowserRouter([
                 element: <Addfood />
             },
             {
-                path: "workout tracker",
+                path: "workout-tracker",
                 element: <Workouttracker />
             }
             
