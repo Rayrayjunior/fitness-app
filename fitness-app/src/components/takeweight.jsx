@@ -3,8 +3,8 @@ import { useState } from "react"
 const Weight = ( { addWeight } ) => {
 
     const [day, setDay] = useState("");
-    const [month, setMonth] useState("");
-    const [year, setYear] useState("");
+    const [month, setMonth] = useState("");
+    const [year, setYear] = useState("");
     const [weight, setWeights] = useState("");
 
     const addtoWeight = () => {
@@ -12,10 +12,19 @@ const Weight = ( { addWeight } ) => {
         if(weight.trim() === "" ) return;
 
         const weightDetails = {
-            day: Date.now(),
+            day: day,
+            month: month,
+            year: year,
+            weight: weight
+        };
 
-        }
-    }
+        addWeight(weightDetails)
+
+        setDay("");
+        setMonth("");
+        setYear("");
+        setWeights("");
+    };
 
 }
 
