@@ -2,19 +2,15 @@ import { useState } from "react"
 
 const Weight = ( { addWeight } ) => {
 
-    const [day, setDay] = useState("");
-    const [month, setMonth] = useState("");
-    const [year, setYear] = useState("");
+    const [date, setDate] = useState("");
     const [weight, setWeights] = useState("");
 
-    const addtoWeight = () => {
+    const addtoWeight = (event) => {
 
-        if(weight.trim() === "" ) return;
+        if(weight.trim() === "" || Date.trim() === "" ) return;
 
         const weightDetails = {
-            day: day,
-            month: month,
-            year: year,
+            date: day,
             weight: weight
         };
 
@@ -25,6 +21,10 @@ const Weight = ( { addWeight } ) => {
         setYear("");
         setWeights("");
     };
+
+    return(
+        <div></div>
+    )
 
 }
 
