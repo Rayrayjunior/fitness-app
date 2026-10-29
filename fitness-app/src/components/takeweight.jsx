@@ -9,7 +9,7 @@ const Weight = ( { addWeight } ) => {
     const addtoWeight = (event) => {
         event.preventDefault()
 
-        if(weight.trim() === "" || Date.trim() === "" ) return;
+        if(weight.trim() === "" || date.trim() === "" ) return;
 
         const weightDetails = {
             weight: weight,
@@ -22,7 +22,7 @@ const Weight = ( { addWeight } ) => {
         setWeights("");
     };
 
-    const takeWeights (event) => {
+    const takeWeight = (event) => {
         setWeights(event.target.value);
     };
 
@@ -31,7 +31,14 @@ const Weight = ( { addWeight } ) => {
     };
 
     return(
-        <div></div>
+        <form onSubmit={addtoWeight}>
+            <h2>Record Weight</h2>
+
+            <input type="number" placeholder="weight in kg" step="0.1" min="1" value={weight} onChange={takeWeight}/>
+            <input type="date" value={date} onChange={takeDate}/>
+
+            <button type="weight">Add Weight</button>
+        </form>
     )
 
 }
