@@ -13,15 +13,21 @@ const Weight = ( { addWeight } ) => {
 
         const weightDetails = {
             weight: weight,
-            date: day
+            date: date
         };
 
         addWeight(weightDetails)
 
-        setDay("");
-        setMonth("");
-        setYear("");
+        setDate("");
         setWeights("");
+    };
+
+    const takeWeights (event) => {
+        setWeights(event.target.value);
+    };
+
+    const takeDate = (event) => {
+        setDate(event.target.value);
     };
 
     return(
