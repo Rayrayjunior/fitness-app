@@ -1,4 +1,3 @@
-
 import { useState, useMemo } from "react";
 
 import Workout from "../components/workouts";
