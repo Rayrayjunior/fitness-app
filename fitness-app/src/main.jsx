@@ -19,6 +19,10 @@ const router = createBrowserRouter([
             {
                 path: "workout-tracker",
                 element: <Workouttracker />
+            },
+            {
+                path: "weight-tracker",
+                element: <Weighttracker />
             }
             
         ]
