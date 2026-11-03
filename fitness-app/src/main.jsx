@@ -21,7 +21,7 @@ const router = createBrowserRouter([
                 element: <Workouttracker />
             },
             {
-                path: "weight-tracker",
+                path: "weight-tracker", //This is what goes into the navbarlink
                 element: <Weighttracker />
             }
             
