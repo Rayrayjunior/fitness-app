@@ -9,7 +9,7 @@ const WeightTracker = () => {
     // Add a new weight to the existing array.
     const addWeight = (weightDetails) => {
         setWeight(prev => [...prev, weightDetails])
-    }
+    };
 }
 
 export default WeightTracker;
