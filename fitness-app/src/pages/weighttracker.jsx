@@ -12,6 +12,17 @@ const WeightTracker = () => {
     const addWeight = (weightDetails) => {
         setWeight(prev => [...prev, weightDetails])
     };
+
+    return(
+        <div>
+
+            <h1>Weight Tracker</h1>
+            <Weight addWeight={addWeight} />
+
+            <Weightdisplay weight={weight} />
+
+        </div>
+    )
 }
 
 export default WeightTracker;
