@@ -12,7 +12,7 @@ const Weight = ( { addWeight } ) => {
         if(weight.trim() === "" || date.trim() === "" ) return;
 
         const weightDetails = {
-            weight: weight,
+            weight: Number(weight),
             date: date
         };
 
@@ -37,7 +37,7 @@ const Weight = ( { addWeight } ) => {
             <input type="number" placeholder="weight in kg" step="0.1" min="1" value={weight} onChange={takeWeight}/>
             <input type="date" value={date} onChange={takeDate}/>
 
-            <button type="weight">Add Weight</button>
+            <button type="submit">Add Weight</button>
         </form>
     )
 
