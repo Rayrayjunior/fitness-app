@@ -32,7 +32,6 @@ const Weight = ( { addWeight } ) => {
 
     return(
         <form onSubmit={addtoWeight}>
-            <h2>Record Weight</h2>
 
             <input type="number" placeholder="weight in kg" step="0.1" min="1" value={weight} onChange={takeWeight}/>
             <input type="date" value={date} onChange={takeDate}/>
